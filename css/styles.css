@@ -17,7 +17,7 @@ input:focus {
   outline: #7b2cbf;
   box-shadow: 0 0 3px #7b2cbf;
 }
-button {
+#add, #clear {
   border: 1px solid #7b2cbf;
   padding: 5px 10px;
   margin-left: -5px;
@@ -25,13 +25,35 @@ button {
   transition: 0.5s;
   background-color: #ffcbf2;
 }
-button:hover {
+#add:hover, #clear:hover {
   background-color: #10002b;
   opacity: 0.8;
 }
 #clear {
   border-radius: 5px;
 }
-#error {
-  visibility: hidden;
+#error{
+  display: none;
+}
+#error.show {
+  display:block;
+}
+#check, #edit, #delete{
+  border: none;
+  background-color: white;
+  color: #7b2cbf;
+  font-size: 1rem;
+}
+.tasks{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+.check, .edit, .delete{
+  color: #7b2cbf;
+  background-color: white;
+  margin: 5px;
+  border: none;
+  font-size: 1rem;
 }
