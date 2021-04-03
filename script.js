@@ -11,6 +11,7 @@ removeItem.addEventListener("click", removeTask);
 
 function addTask(e) {
   e.preventDefault();
+  
   if (input.value == "") {
    
     error.classList.add("show");
@@ -43,11 +44,14 @@ btnBox.appendChild(deleteBtn)
 taskItem.appendChild(text)
 taskItem.appendChild(btnBox)
 task.appendChild(taskItem)
+input.value = ''
+// add event listeners to the icons
 
-input.value == ''
+
+
   }
 }
 function removeTask(e) {
   e.preventDefault();
-  console.log("hey");
+task.innerHTML = ''
 }

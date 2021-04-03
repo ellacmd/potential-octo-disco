@@ -21,13 +21,17 @@ input:focus {
   border: 1px solid #7b2cbf;
   padding: 5px 10px;
   margin-left: -5px;
-  color: #7b2cbf;
+  color: white;
   transition: 0.5s;
-  background-color: #ffcbf2;
+  background-color: #7b2cbf;
+  cursor: pointer;
+  outline-width: 0px;
 }
 #add:hover, #clear:hover {
-  background-color: #10002b;
+  background-color:#7b2cbf;
+  font-weight: bold;
   opacity: 0.8;
+  color: white;
 }
 #clear {
   border-radius: 5px;
@@ -56,4 +60,10 @@ input:focus {
   margin: 5px;
   border: none;
   font-size: 1rem;
+
+}
+
+
+i {
+  pointer-events: none;
 }
